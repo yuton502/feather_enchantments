@@ -1,0 +1,12 @@
+{
+  "$comments": [
+    "特定のエンチャントが付与されているアイテムのどれかを使用すると実行されます。",
+    "エンチャントの特定はファンクションの中で行ってください。",
+    "tick処理が必要な場合、ticking_arrow.jsonの変更も忘れないでください。",
+    "functions/observers/has_bows_enchantmentsの変更も忘れないでください。"
+  ],
+  "values": [
+    "feather_enchantments:enchantments/torcher/run",
+    "feather_enchantments:enchantments/explosive/run"
+  ]
+}

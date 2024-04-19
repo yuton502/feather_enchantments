@@ -1,0 +1,59 @@
+{
+  "criteria": {
+    "damaged": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "feather_enchantments:torcher/any"
+          }
+        ],
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "id": "minecraft:is_projectile",
+                "expected": true
+              }
+            ],
+            "direct_entity": {
+              "type": "minecraft:arrow"
+            }
+          }
+        }
+      }
+    },
+    "killed": {
+      "trigger": "minecraft:player_killed_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "feather_enchantments:torcher/any"
+          }
+        ],
+        "killing_blow": {
+          "tags": [
+            {
+              "id": "minecraft:is_projectile",
+              "expected": true
+            }
+          ],
+          "direct_entity": {
+            "type": "minecraft:arrow"
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "damaged",
+      "killed"
+    ]
+  ],
+  "rewards": {
+    "function": "feather_enchantments:enchantments/torcher/mob_hit"
+  }
+}

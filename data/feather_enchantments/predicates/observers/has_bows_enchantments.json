@@ -1,0 +1,17 @@
+{
+  "$comments": [
+    "特定のエンチャントを持っているかを調べます。",
+    "conditionはreferenceを用いてください。"
+  ],
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "feather_enchantments:torcher/any"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "feather_enchantments:explosive/any"
+    }
+  ]
+}

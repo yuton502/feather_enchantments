@@ -1,0 +1,11 @@
+{
+  "$comments": [
+    "tick処理が必要な矢に対して実行されます。",
+    "shot_bows.jsonの変更も忘れないでください。",
+    "functions/observers/has_bows_enchantmentsの変更も忘れないでください。"
+  ],
+  "values": [
+    "feather_enchantments:enchantments/torcher/tick",
+    "feather_enchantments:enchantments/explosive/tick"
+  ]
+}

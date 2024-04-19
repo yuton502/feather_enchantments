@@ -1,0 +1,47 @@
+{
+  "criteria": {
+    "has_anti_venom_lvl1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "feather_enchantments:anti_venom/1"
+          }
+        ]
+      }
+    },
+    "has_anti_venom_lvl2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "feather_enchantments:anti_venom/2"
+          }
+        ]
+      }
+    },
+    "has_anti_venom_lvl3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "feather_enchantments:anti_venom/3"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_anti_venom_lvl1",
+      "has_anti_venom_lvl2",
+      "has_anti_venom_lvl3"
+    ]
+  ],
+  "rewards": {
+    "function": "feather_enchantments:enchantments/anti_venom/run"
+  }
+}

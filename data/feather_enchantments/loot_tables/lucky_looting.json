@@ -1,0 +1,81 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 10,
+          "name": "minecraft:gravel"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 10,
+          "name": "minecraft:sand"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 10,
+          "name": "minecraft:grass_block"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 8,
+          "name": "minecraft:clay"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 10,
+          "name": "minecraft:dirt"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:any_of",
+          "terms": [
+            {
+              "condition": "minecraft:all_of",
+              "terms": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "feather_enchantments:lucky_looting/1"
+                },
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.025
+                }
+              ]
+            },
+            {
+              "condition": "minecraft:all_of",
+              "terms": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "feather_enchantments:lucky_looting/2"
+                },
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.05
+                }
+              ]
+            },
+            {
+              "condition": "minecraft:all_of",
+              "terms": [
+                {
+                  "condition": "minecraft:reference",
+                  "name": "feather_enchantments:lucky_looting/3"
+                },
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

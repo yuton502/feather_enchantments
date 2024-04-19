@@ -1,0 +1,12 @@
+{
+  "$comments": [
+    "load時にadvancementを剥奪します。",
+    "大抵は防具エンチャントに必要です。"
+  ],
+  "values": [
+    "feather_enchantments:enchantments/anti_venom/remove",
+    "feather_enchantments:enchantments/bright_sight/remove",
+    "feather_enchantments:enchantments/bunny_hop/remove",
+    "feather_enchantments:enchantments/fast_swim/remove"
+  ]
+}

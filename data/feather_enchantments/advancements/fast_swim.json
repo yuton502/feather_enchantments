@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "has_fast_swim": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "feather_enchantments:fast_swim/any"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_fast_swim"
+    ]
+  ],
+  "rewards": {
+    "function": "feather_enchantments:enchantments/fast_swim/run"
+  }
+}

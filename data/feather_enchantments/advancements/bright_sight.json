@@ -1,0 +1,23 @@
+{
+  "criteria": {
+    "has_bright_sight": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "feather_enchantments:bright_sight/any"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_bright_sight"
+    ]
+  ],
+  "rewards": {
+    "function": "feather_enchantments:enchantments/bright_sight/run"
+  }
+}

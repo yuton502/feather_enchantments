@@ -1,0 +1,47 @@
+{
+  "criteria": {
+    "has_bunny_hop_lvl1": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "feather_enchantments:bunny_hop/1"
+          }
+        ]
+      }
+    },
+    "has_bunny_hop_lvl2": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "feather_enchantments:bunny_hop/2"
+          }
+        ]
+      }
+    },
+    "has_bunny_hop_lvl3": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "feather_enchantments:bunny_hop/3"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_bunny_hop_lvl1",
+      "has_bunny_hop_lvl2",
+      "has_bunny_hop_lvl3"
+    ]
+  ],
+  "rewards": {
+    "function": "feather_enchantments:enchantments/bunny_hop/run"
+  }
+}

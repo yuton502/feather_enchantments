@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:generic",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:armor_stand",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{EntityTag:{Tags:[\"feen.smithing_table\"],NoGravity:1b,Invisible:1b,Marker:1b},feather_enchantments:\"feather_smithing_table\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "criteria": {
+    "damaged": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "feather_enchantments:explosive/any"
+          }
+        ],
+        "damage": {
+          "type": {
+            "tags": [
+              {
+                "id": "minecraft:is_projectile",
+                "expected": true
+              }
+            ],
+            "direct_entity": {
+              "type": "minecraft:arrow"
+            }
+          }
+        }
+      }
+    }
+  },
+  "requirements": [
+    [
+      "damaged"
+    ]
+  ],
+  "rewards": {
+    "function": "feather_enchantments:enchantments/explosive/mob_hit"
+  }
+}

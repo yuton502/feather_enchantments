@@ -1,0 +1,97 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{CustomEnchantments:[{id:\"anti_venom\",lvl:1}]}",
+    "conditions": [
+      {
+        "condition": "minecraft:all_of",
+        "terms": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:leather_helmet",
+                    "minecraft:iron_helmet",
+                    "minecraft:golden_helmet",
+                    "minecraft:chainmail_helmet",
+                    "minecraft:diamond_helmet",
+                    "minecraft:netherite_helmet",
+                    "minecraft:turtle_helmet"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "nbt": "{CustomEnchantments:[{id:\"anti_venom\"}]}"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "lore": [
+      {
+        "text": "デバフ無効 Ⅰ",
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "replace": false,
+    "conditions": [
+      {
+        "condition": "minecraft:all_of",
+        "terms": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "equipment": {
+                "mainhand": {
+                  "items": [
+                    "minecraft:leather_helmet",
+                    "minecraft:iron_helmet",
+                    "minecraft:golden_helmet",
+                    "minecraft:chainmail_helmet",
+                    "minecraft:diamond_helmet",
+                    "minecraft:netherite_helmet",
+                    "minecraft:turtle_helmet"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "condition": "minecraft:inverted",
+            "term": {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "nbt": "{CustomEnchantments:[{id:\"anti_venom\"}]}"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
